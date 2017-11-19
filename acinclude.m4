@@ -121,8 +121,8 @@ You must specify an absolute path for --with-pbc-lib.
 BACKUP_CFLAGS=${CFLAGS}
 BACKUP_LIBS=${LIBS}
 
-CFLAGS="${CFLAGS} ${GMP_CFLAGS} ${PBC_CFLAGS}"
-LIBS="${LIBS} ${GMP_LIBS} ${PBC_LIBS}"
+CFLAGS="${CFLAGS} ${PBC_CFLAGS} ${GMP_CFLAGS}"
+LIBS="${LIBS} ${PBC_LIBS} ${GMP_LIBS}"
 
 AC_TRY_LINK(
   [#include <pbc.h>],
