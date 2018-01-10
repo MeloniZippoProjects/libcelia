@@ -10,3 +10,14 @@ following page:
 
 Email Yao Zheng <zhengyao@wpi.edu> with any questions, comments, 
 or bug reports.
+
+Fixed Errors 
+============
+
+The original repository had a bug that we fixed.
+
+1. Makefile not working in gcc or g++:
+	The original makefile had dependencies specified in such an order
+	that gcc ignored some of them. 
+	Corrected in commit c1e98ff
+
